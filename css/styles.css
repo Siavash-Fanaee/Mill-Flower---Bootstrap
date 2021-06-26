@@ -1,0 +1,16 @@
+body {
+    max-width: 1000px; height: auto; /*Set maximum width of 1000px for webpages*/
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif; /*First font family for the whole page. The second will override this*/
+    font-size: 1em;
+}
+
+/*Second font family, Overridden the first one for following Classes and IDs*/
+header, .jumbotron, .card-title, .carousel, .pb-2, #filter {
+    font-family: 'New Tegomin', serif;
+}
+ /*Setting background for jumbotron*/
+.jumbotron {
+    background-image: url(../images/aboutus-img.jpg);
+    background-size: cover;
+}

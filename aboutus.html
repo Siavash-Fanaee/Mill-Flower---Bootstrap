@@ -1,0 +1,132 @@
+<!DOCTYPE html>     <!-- html 5 declaration:-->
+<html lang="en">    <!--Declare the language of the Web page-->
+<head>
+    <meta charset="UTF-8">      <!-- Ti show the browser use UTF-8 character set: -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Setting page to viewport for responsivness: -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css\styles.css">  <!-- Link to css file-->
+    
+    <!-- First font link: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- First font link: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    
+    <title>About us</title>  <!--Set title-->
+
+
+</head>
+<body>
+
+    <header>
+
+        <!--Using navbar Class: expand on medium size and larger sizes (Vertical in less than medium)-->
+        <!--Setting primary blue background and special bright font colour for font(navbar-dark)-->
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark"> 
+            <!--navbar-nav for a full-height and lightweight navigation - ml-auto to allgn right: -->
+            <ul class="navbar-nav ml-auto"> 
+                <!--Setting the first li to active using Class active-->
+                <li class="nav-item active"><a class="nav-link" href="#">My Acccount</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Basket</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Checkout</a> </li>
+            </ul>
+        </nav> <!--End of navbar-->
+
+
+        <!--Using bootstrap 4 grid system to layout page's elements-->
+        <div class="container-fluid"> <!--Using container-fluid class for a full width container, spanning the entire width of the viewport-->
+            <div class="row"> <!--Set the row of the grid-->
+                <div class="col-md-5"> <!--Set the first column of the grid witch has 5/12 of the whole width of the grid-->
+                    <img class="img-fluid" src="images\logo2org.jpg" alt="Mill Flowers logo">  
+                    <h6 class="font-italic">ARTISAN FLOWER ARRANGMENTS</h6>
+                </div> <!--End of the first column of the grid-->
+
+                <div class="col-md-7"> <!--Set the second column of the grid witch has 7/12 of the whole width of the grid-->
+                    <div> <!--a div for putting 2 elements in a one column-->
+                      <!--Using navbar Class: expand on medium size and larger sizes (Vertical in less than medium) and floated to the right-->
+                      <nav class="navbar navbar-expand-md float-right">
+                        <a href="tel:+353614486165" class="nav-link">+353(0)614486165</a> <!-- Create a call link using tel -->
+                        <a href="mailto:info@millflowers.ie" class="nav-link">info@millflowers.ie</a> <!-- Create a mail link using mailto -->
+                      </nav>
+
+                      <!--Class input group for defining a set of inputs -->
+                      <div class="input-group mb-3"> <!--mb: margin bottom-->
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append"> <!--class input-group-append to put the button beside the prevoius input element-->
+                            <button type="button" class="btn btn-primary">Search</button> <!--bootstrap button - Primary style (blue bg and bright font)-->
+                        </div>
+                      </div>
+
+                    </div>
+                </div> <!--End of the second column of the grid-->
+            </div> <!--End of the row of the grid-->
+        </div> <!--End of the grid-->
+
+
+        <!--Using navbar Class: expand on medium size and larger sizes - Bright font and h5 class for size -->
+        <nav class="navbar navbar-expand-md navbar-light h5">
+          
+          <!--class navbar-header for creating a fix header before the other navbar links -->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#"><h5>Mill Flowers</h5></a>
+          </div>
+          
+          <!-- Crating a dropdown icon which activate in medium size and smaller sizes-->
+          <div class="ml-auto"> <!--Allign right the icon-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown">
+                  <span class="navbar-toggler-icon"></span> <!-- Hamburger Icon-->
+                </button>
+          </div>
+
+          <!-- Creating the navbar for Hamburger whitvh dropdown in medium size and smaller sizes-->
+          <div class="collapse navbar-collapse" id="dropdown">
+            <!--Navbar and its items:-->
+            <ul class="navbar-nav"> 
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">Buy Online</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Weddings</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+        </nav>
+ 
+    </header>   <!-- End of header -->
+
+    <main>  <!--Main content of the page-->
+
+        <!--Using container-fluid class for a full width container, spanning the entire width of the viewport-->
+        <div class="container-fluid">
+            <!-- Using Jumbotron Calss to showcase key a key messages in a flexible way which can optionally extend the entire viewport:-->
+            <!--A background image will be added to this jumbotron in CSS file-->
+            <div class="jumbotron">
+                <div class="container">
+                  <h1 class="display-5">About Us</h1> <!--Titre size 4-->
+                  <p class="lead">Seventy yeras bringing floral arrangments to the city of Limerick</p> <!--leading messeage-->
+                </div>
+            </div>
+
+            <p>
+                Mill Flowers have been in existence since the 1950s. Three generations of our family
+                have worked in this family business, artisticaly hand-arranging flowers for every 
+                occasion. We provide service from everyday bouques, birthday and holiday gift baskets, 
+                funeral baskets, special occasion arrangments, and more! No matter what the occasion, 
+                mill Flowers will put every ounce of love, dedication and personalisation to every 
+                piece that is created by us.
+            </p>
+        </div>
+
+    </main>
+</body>
+</html>

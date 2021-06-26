@@ -1,0 +1,207 @@
+<!DOCTYPE html>     <!-- html 5 declaration:-->
+<html lang="en">    <!--Declare the language of the Web page-->
+<head>
+    <meta charset="UTF-8">      <!-- Ti show the browser use UTF-8 character set: -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Setting page to viewport for responsivness: -->
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css\styles.css">  <!-- Link to css file-->
+
+    <!-- First font link: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- First font link: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    
+    <title>Home</title>  <!--Set title-->
+</head>
+<body>
+
+    <header>
+
+        <!--Using navbar Class: expand on medium size and larger sizes (Vertical in less than medium)-->
+        <!--Setting primary blue background and special bright font colour for font(navbar-dark)-->
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark"> 
+            <!--navbar-nav for a full-height and lightweight navigation - ml-auto to allgn right: -->
+            <ul class="navbar-nav ml-auto"> 
+                <!--Setting the first li to active using Class active-->
+                <li class="nav-item active"><a class="nav-link" href="#">My Acccount</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Basket</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Checkout</a> </li>
+            </ul>
+        </nav> <!--End of navbar-->
+
+
+        <!--Using bootstrap 4 grid system to layout page's elements-->
+        <div class="container-fluid"> <!--Using container-fluid class for a full width container, spanning the entire width of the viewport-->
+            <div class="row"> <!--Set the row of the grid-->
+                <div class="col-md-5"> <!--Set the first column of the grid witch has 5/12 of the whole width of the grid-->
+                    <img class="img-fluid" src="images\logo2org.jpg" alt="Mill Flowers logo">  
+                    <h6 class="font-italic">ARTISAN FLOWER ARRANGMENTS</h6>
+                </div> <!--End of the first column of the grid-->
+
+                <div class="col-md-7"> <!--Set the second column of the grid witch has 7/12 of the whole width of the grid-->
+                    <div> <!--a div for putting 2 elements in a one column-->
+                      <!--Using navbar Class: expand on medium size and larger sizes (Vertical in less than medium) and floated to the right-->
+                      <nav class="navbar navbar-expand-md float-right">
+                        <a href="tel:+353614486165" class="nav-link">+353(0)614486165</a> <!-- Create a call link using tel -->
+                        <a href="mailto:info@millflowers.ie" class="nav-link">info@millflowers.ie</a> <!-- Create a mail link using mailto -->
+                      </nav>
+
+                      <!--Class input group for defining a set of inputs -->
+                      <div class="input-group mb-3"> <!--mb: margin bottom-->
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append"> <!--class input-group-append to put the button beside the prevoius input element-->
+                            <button type="button" class="btn btn-primary">Search</button> <!--bootstrap button - Primary style (blue bg and bright font)-->
+                        </div>
+                      </div>
+
+                    </div>
+                </div> <!--End of the second column of the grid-->
+            </div> <!--End of the row of the grid-->
+        </div> <!--End of the grid-->
+
+
+        <!--Using navbar Class: expand on medium size and larger sizes - Bright font and h5 class for size -->
+        <nav class="navbar navbar-expand-md navbar-light h5">
+          
+          <!--class navbar-header for creating a fix header before the other navbar links -->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#"><h5>Mill Flowers</h5></a>
+          </div>
+          
+          <!-- Crating a dropdown icon which activate in medium size and smaller sizes-->
+          <div class="ml-auto"> <!--Allign right the icon-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown">
+                  <span class="navbar-toggler-icon"></span> <!-- Hamburger Icon-->
+                </button>
+          </div>
+
+          <!-- Creating the navbar for Hamburger whitvh dropdown in medium size and smaller sizes-->
+          <div class="collapse navbar-collapse" id="dropdown">
+            <!--Navbar and its items:-->
+            <ul class="navbar-nav"> 
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">Buy Online</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Weddings</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+        </nav>
+ 
+    </header>   <!-- End of header -->
+
+    <main>  <!--Main content of the page-->
+
+      <!--Crating Carousel to slideshow components cycling through elements-->
+      <div id="demo" class="carousel slide container" data-ride="carousel">
+
+        <!--Carousel Indicators Class (Put indicators lines on the bottom part of the Carousel) -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li> <!--Set the first indicator as dufault active one-->
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!--Carousel Inner to specify slides in the Carousel:-->
+        <div class="carousel-inner">
+
+          <div class="carousel-item active"> <!--Set the first item as dufault active one-->
+            <!-- d-block to prevent browser default image alignment:-->
+            <img class="d-block w-100 h-50" src="images/Image5.png" alt="every-occasion" width="1500" height="500">
+            <div class="carousel-caption"> <!-- Carousel Caption-->
+              <h3>Flowers for every occasion</h3>
+              <p>Buy one of our fabulous bouqhets online</p>
+            </div>   
+          </div>
+
+          <div class="carousel-item"> <!--Second Carousel Item-->
+            <img class="d-block w-100 h-50" src="images/Image6.png" alt="table-arrangment" width="1500" height="500">
+            <div class="carousel-caption"> <!-- Carousel Caption-->
+              <h3>Amazing table arrangment</h3>
+              <p>Decorate your dinner table with our beautiful arrangments</p>
+            </div>   
+          </div>
+
+          <div class="carousel-item"> <!--Third and last Carousel Item-->
+            <img class="d-block w-100 h-50" src="images/wedding.jpg" alt="wedding" width="1500" height="500">
+            <div class="carousel-caption"> <!-- Carousel Caption-->
+              <h3>Planninng a wedding</h3>
+              <p>We are expert in wedding flowers</p>
+            </div>   
+          </div>
+
+        </div> <!-- End of carousel-inner-->
+
+        <!-- Defining Prevoius and Next Control Icons for Carousel-->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> <!-- End of carousel -->
+
+
+
+      <div class="row container-fluid"> <!-- Defie a grid for putting 3 Cards in it-->
+
+        <!--First column of the grid: 4/12 for very larg to small screen size and 12/12 for very small screens (Mobile vetical state)-->
+        <div class="col-sm-4 col-12 pt-4"> <!--pt: Padding Top-->
+          <div class="card container-fluid pt-2"> <!--Card Container-->
+            <h3 class="card-title">Shop Online</h3> <!--Card Title-->
+            <img class="card-img-top" src="images\white400_square.png" alt="Vibrant Vase">
+            <div class="card-body">
+              <p class="card-text">Order amazing flowers and have them delivered to someone special.
+                  we offer a next day delivey service locally.</p>
+              <button type="button" class="btn btn-outline-primary">Order Online</button> <!--Bootstrap button-->
+            </div>
+          </div>
+        </div> <!-- End of first column -->
+        
+        <!--Second column of the grid: 4/12 for very larg to small screen size and 12/12 for very small screens (Mobile vetical state)-->
+        <div class="col-sm-4 col-12 pt-4"> <!--pt: Padding Top-->
+          <div class="card container-fluid pt-2"> <!--Card Container-->
+            <h3 class="card-title">Weddinng Flowers</h3> <!--Card Title-->
+            <img class="card-img-top" src="images\wedding_thum.jpg" alt="Classic Tulips">
+            <div class="card-body">
+              <p class="card-text">Weddings are the icing on our cake. We at Mill Flowers are header
+                  to help create lasting images and memories.</p>
+              <button type="button" class="btn btn-outline-primary">Wedding</button> <!--Bootstrap button-->
+            </div>
+          </div> 
+        </div> <!-- End of second column -->
+
+        <!--Third column of the grid: 4/12 for very larg to small screen size and 12/12 for very small screens (Mobile vetical state)-->
+        <div class="col-sm-4 col-12 pt-4"> <!--pt: Padding Top-->
+          <div class="card container-fluid pt-2"> <!--Card Container-->
+            <h3 class="card-title">Corporate Gifting</h3> <!--Card Title-->
+            <img class="card-img-top" src="images\tulips_square.png" alt="Lilies">
+            <div class="card-body">
+              <p class="card-text">Celeberate special occasion such as a retirement, the birtday of 
+                  a baby or simply to say thank you.</p>
+              <button type="button" class="btn btn-outline-primary">Corporate Gifts</button> <!--Bootstrap button-->
+            </div>
+          </div> 
+        </div> <!-- End of third column -->
+
+      </div> <!--End of nested grid-->
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>     <!-- html 5 declaration:-->
+<html lang="en">    <!--Declare the language of the Web page-->
+<head>
+    <meta charset="UTF-8">      <!-- Ti show the browser use UTF-8 character set: -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- Setting page to viewport for responsivness: -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="css\styles.css">  <!-- Link to css file-->
+    
+    <!-- First font link: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+    <!-- First font link: -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    
+    <title>Category</title>  <!--Set title-->
+</head>
+<body>
+    <header>
+
+        <!--Using navbar Class: expand on medium size and larger sizes (Vertical in less than medium)-->
+        <!--Setting primary blue background and special bright font colour for font(navbar-dark)-->
+        <nav class="navbar navbar-expand-md bg-primary navbar-dark"> 
+            <!--navbar-nav for a full-height and lightweight navigation - ml-auto to allgn right: -->
+            <ul class="navbar-nav ml-auto"> 
+                <!--Setting the first li to active using Class active-->
+                <li class="nav-item active"><a class="nav-link" href="#">My Acccount</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Basket</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Checkout</a> </li>
+            </ul>
+        </nav> <!--End of navbar-->
+
+
+        <!--Using bootstrap 4 grid system to layout page's elements-->
+        <div class="container-fluid"> <!--Using container-fluid class for a full width container, spanning the entire width of the viewport-->
+            <div class="row"> <!--Set the row of the grid-->
+                <div class="col-md-5"> <!--Set the first column of the grid witch has 5/12 of the whole width of the grid-->
+                    <img class="img-fluid" src="images\logo2org.jpg" alt="Mill Flowers logo">  
+                    <h6 class="font-italic">ARTISAN FLOWER ARRANGMENTS</h6>
+                </div> <!--End of the first column of the grid-->
+
+                <div class="col-md-7"> <!--Set the second column of the grid witch has 7/12 of the whole width of the grid-->
+                    <div> <!--a div for putting 2 elements in a one column-->
+                      <!--Using navbar Class: expand on medium size and larger sizes (Vertical in less than medium) and floated to the right-->
+                      <nav class="navbar navbar-expand-md float-right">
+                        <a href="tel:+353614486165" class="nav-link">+353(0)614486165</a> <!-- Create a call link using tel -->
+                        <a href="mailto:info@millflowers.ie" class="nav-link">info@millflowers.ie</a> <!-- Create a mail link using mailto -->
+                      </nav>
+
+                      <!--Class input group for defining a set of inputs -->
+                      <div class="input-group mb-3"> <!--mb: margin bottom-->
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-append"> <!--class input-group-append to put the button beside the prevoius input element-->
+                            <button type="button" class="btn btn-primary">Search</button> <!--bootstrap button - Primary style (blue bg and bright font)-->
+                        </div>
+                      </div>
+
+                    </div>
+                </div> <!--End of the second column of the grid-->
+            </div> <!--End of the row of the grid-->
+        </div> <!--End of the grid-->
+
+
+        <!--Using navbar Class: expand on medium size and larger sizes - Bright font and h5 class for size -->
+        <nav class="navbar navbar-expand-md navbar-light h5">
+          
+          <!--class navbar-header for creating a fix header before the other navbar links -->
+          <div class="navbar-header">
+              <a class="navbar-brand" href="#"><h5>Mill Flowers</h5></a>
+          </div>
+          
+          <!-- Crating a dropdown icon which activate in medium size and smaller sizes-->
+          <div class="ml-auto"> <!--Allign right the icon-->
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dropdown">
+                  <span class="navbar-toggler-icon"></span> <!-- Hamburger Icon-->
+                </button>
+          </div>
+
+          <!-- Creating the navbar for Hamburger whitvh dropdown in medium size and smaller sizes-->
+          <div class="collapse navbar-collapse" id="dropdown">
+            <!--Navbar and its items:-->
+            <ul class="navbar-nav"> 
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About us</a> </li>
+                <li class="nav-item"><a class="nav-link" href="#">Buy Online</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Weddings</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+        </nav>
+ 
+    </header>   <!-- End of header -->
+    
+    <main>  <!-- main content of the page are put in main tag -->
+
+
+        <!--Using container-fluid class for a full width container, spanning the entire width of the viewport-->
+        <div class="container-fluid">
+            <div class="row"> <!--Row div of the grid-->
+                <div class="col-md-3"> <!--First column with the size 3/12 of whole grid-->
+                    <h2 id="filter">Filter</h2>
+
+                    <div class="border-top my-3"></div> <!-- Horizontal border line -->
+            
+                    <h3>Flower</h3> <!--Titre of First Checkbox (Colour)-->
+            
+                    <!--Frist Checkbox (Flower): -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="flowerType1" id="flowerType1" value="Lily">
+                        <label class="form-check-label" for="flowerType1">Lily</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="flowerType2" id="flowerType2" value="Carnation">
+                        <label class="form-check-label" for="flowerType2">Carnation</label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="checkbox" name="flowerType3" id="flowerType3" value="Chrysanthemum">
+                        <label class="form-check-label" for="flowerType3">Chrysanthemum</label>
+                    </div>
+                    <div class="form-check disabled">
+                        <input class="form-check-input" type="checkbox" name="flowerType4" id="flowerType4" value="Rose">
+                        <label class="form-check-label" for="flowerType4">Rose</label>
+                    </div>
+            
+                    <div class="border-top my-3"></div> <!-- Horizontal border line -->
+            
+                    <h3>Colour</h3> <!--Titre of Second Checkbox (Colour)-->
+
+                    <!--Second Checkbox (Colour): -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colour1" id="colour1" value="Pink">
+                        <label class="form-check-label" for="colour1">Pink</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colour2" id="colour2" value="Orange">
+                        <label class="form-check-label" for="colour2">Orange</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colour3" id="colour3" value="Purple">
+                        <label class="form-check-label" for="colour3">Purple</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colour4" id="colour4" value="White">
+                        <label class="form-check-label" for="colour4">White</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="colour5" id="colour5" value="Red">
+                        <label class="form-check-label" for="colour5">Red</label>
+                    </div>
+
+
+                </div> <!--End of first column with the size 3/12 of whole grid-->
+
+
+                <div class="col-md-9"> <!--Second column with the size 9/12 of whole grid-->
+                    <div class="container">
+                        <h1 class="pb-2">Birthday Flower</h1>
+
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination pb-2"> <!--pagination to indicate a series of related content exists across multiple pages.-->
+                              <li class="page-item"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+
+                        <div class="row"> <!-- Nested grid -->
+                            <!--Column size 4/12 for large, 6/12 for medium and smaller sizes:-->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6 pb-4"> <!--pd: Padding bottom-->
+                                <!--card container and its elements:-->
+                                <div class="card container pt-2">
+                                    <img class="card-img-top" src="images\vibrant-vase.png" alt="Vibrant Vase">
+                                    <div class="card-body">
+                                      <h3 class="card-title">Vibrant Vase</h3>
+                                      <p class="card-text">&euro; 39.99</p>
+                                      <button type="submit" class="btn btn-primary">Buy</i></button>
+                                      <button type="submit" class="btn btn-primary">View</i></button>
+                                    </div>
+                                </div> <!--End of card container-->
+                            </div>
+
+                            <!--Column size 4/12 for large, 6/12 for medium and smaller sizes:-->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                <!--card container and its elements:-->
+                                <div class="card container pt-2">
+                                    <img class="card-img-top" src="images\tulips_square.png" alt="Classic Tulips">
+                                    <div class="card-body">
+                                      <h3 class="card-title">Classic Tulips</h3>
+                                      <p class="card-text">&euro; 35.99</p>
+                                      <button type="submit" class="btn btn-primary">Buy</i></button>
+                                      <button type="submit" class="btn btn-primary">View</i></button>
+                                    </div>
+                                </div> <!--End of card container-->
+                            </div>
+
+                            <!--Column size 4/12 for large, 6/12 for medium and smaller sizes:-->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                <!--card container and its elements:-->
+                                <div class="card container pt-2">
+                                    <img class="card-img-top" src="images\white400_square.png" alt="Lilies">
+                                    <div class="card-body">
+                                      <h3 class="card-title">Lilies <span class="badge badge-secondary">New</span></h3>
+                                      <p class="card-text">&euro; 35.99</p>
+                                      <button type="submit" class="btn btn-primary">Buy</i></button>
+                                      <button type="submit" class="btn btn-primary">View</i></button>
+                                    </div>
+                                </div> <!--End of card container-->
+                            </div>
+
+                            <!--Column size 4/12 for large, 6/12 for medium and smaller sizes:-->
+                            <div class="col-lg-4 col-md-6 col-sm-6 col-6">
+                                <!--card container and its elements:-->
+                                <div class="card container pt-2">
+                                    <img class="card-img-top" src="images\wedding_Square.jpg" alt="Small bouquet">
+                                    <div class="card-body">
+                                      <h3 class="card-title">Small bouquet</h3>
+                                      <p class="card-text">&euro; 29.99</p>
+                                      <button type="submit" class="btn btn-primary">Buy</i></button>
+                                      <button type="submit" class="btn btn-primary">View</i></button>
+                                    </div>
+                                </div> <!--End of card container-->
+                            </div>
+    
+                        </div> <!--End of nested grid-->
+    
+                    
+                          <nav aria-label="Page navigation">
+                            <ul class="pagination pt-4"> <!--pagination-->
+                              <li class="page-item"><a class="page-link" href="#" tabindex="-1">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+    
+                    </div>
+
+                </div>
+
+            </div> <!--End of Row div of the grid-->
+
+        </div> <!--End of Container-->
+
+    </main>
+
+
+</body>
+</html>
